@@ -71,3 +71,8 @@ button.btn.btn-success {
 .mt-8 {
     margin-top: 2rem;
 }
+
+img.img-icons {
+    width: 25px;
+    height: 30px;
+}
