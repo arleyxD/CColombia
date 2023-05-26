@@ -173,5 +173,34 @@
     }
 }
 
+/* footer */
+.footer {
+    margin-top: 0px;
+    border-top: solid;
+    border-top-color: green;
+    padding-top: 30px;
+}
+.footer.row {
+        background-color: rgb(177,219,83);
+        list-style-type: none;
+        padding: 58px;
+        align-items: center;
+}
 
-
+img.logo-footer {
+    height: 86px;
+}
+i.bi.bi-facebook {
+    color: green;
+}
+i.bi.bi-instagram {
+    color: green;
+}
+.col-4 h2 {
+    color: #006400;
+    text-align: center;
+}
+li {
+    text-align: -webkit-center;
+    color: green;
+}
