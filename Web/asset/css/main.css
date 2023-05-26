@@ -76,3 +76,20 @@ img.img-icons {
     width: 25px;
     height: 30px;
 }
+
+.card{
+    width: 18rem;
+}
+
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 576px) {
+    .button-destacados {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .button-destacados button {
+        margin-bottom: 10px;
+    }
+}

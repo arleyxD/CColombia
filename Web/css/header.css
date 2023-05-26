@@ -1,32 +1,33 @@
+/* Estilos para el encabezado */
 .menu {
     display: flex;
     padding: 20px;
     text-align: center;
     align-items: center;
     justify-content: space-around;
-
 }
+
 .menu i {
-    box-sizing: border-box; 
+    box-sizing: border-box;
     height: 60px;
     cursor: pointer;
     font-weight: 700;
 }
+
 .logo {
     padding: 12px 80px 12px 12px;
 }
-.logo img{
+
+.logo img {
     width: 80px;
     height: 60px;
     border-radius: 50%;
- 
 }
-/* buscador*/
+
+/* Estilos para el buscador */
 .search__container {
     padding-top: 0px;
 }
-
-
 
 .search__input {
     width: 100%;
@@ -37,8 +38,7 @@
     line-height: 18px;
     color: #575756;
     background-color: transparent;
-
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-size: 18px 18px;
     background-position: 95% center;
@@ -50,31 +50,31 @@
 }
 
 .search__input::placeholder {
-        color: rgba(87, 87, 86, 0.8);
-        text-transform: uppercase;
-        letter-spacing: 1.5px;
-    }
+    color: rgba(87, 87, 86, 0.8);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
 
 .search__input:hover,
-    .search__input:focus {
-        padding: 12px 200px;
-        outline: 0;
-        border: 1px solid transparent;
-        border-bottom: 1px solid #575756;
-        border-radius: 0;
-        background-position: 100% center;
-    }
-
+.search__input:focus {
+    padding: 12px 200px;
+    outline: 0;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #575756;
+    border-radius: 0;
+    background-position: 100% center;
+}
 
 .ubicacion i {
     color: orangered;
 }
+
 .ubicacion a {
     color: green;
     text-decoration: none;
     padding: 0px 12px 0px 0px;
-
 }
+
 .ingresar a {
     display: block;
     font-weight: 700;
@@ -83,71 +83,95 @@
     padding: 10px;
     text-decoration: none;
     color: green;
-    
-    
-    
+}
 
-}.carrito i {
+.carrito i {
     color: green;
     padding: 12px;
     cursor: pointer;
     transition: .5s;
-    
 }
 
-.clas1, .clas2, .clas3 {
+.clas1,
+.clas2,
+.clas3 {
     display: flex;
     align-items: center;
 }
+
 .clas1 {
     justify-content: flex-start;
 }
 
-.clas3.col-2{
+.clas3.col-2 {
     justify-content: flex-end;
 }
+
 .clas2.col-8 {
     justify-content: space-around;
 }
-
-/*sider*/
-.w3-border-right {
-    border-right: 1px solid #ccc!important;
-}
-
 .w3-sidebar {
     height: 100%;
     width: 200px;
     background-color: #fff;
-    position: fixed!important;
+    position: fixed;
     z-index: 1;
     overflow: auto;
 }
-.w3-bar-block .w3-bar-item {
-    width: 100%;
-    display: block;
+
+.w3-bar-item {
     padding: 8px 16px;
     text-align: left;
     border: none;
     white-space: normal;
-    float: none;
-    outline: 0;
 }
 
-
-.w3-btn, .w3-button {
-    border: none;
-    display: inline-block;
+.btn-close {
+    display: block;
     padding: 8px 16px;
-    vertical-align: middle;
-    overflow: hidden;
-    text-decoration: none;
-    color: inherit;
-    background-color: inherit;
-    text-align: center;
+    text-align: left;
+    border: none;
+    background-color: transparent;
     cursor: pointer;
-    white-space: nowrap;
+    font-size: 16px;
+    font-weight: bold;
 }
-.w3-xlarge {
-    font-size: 24px!important;
+
+
+
+/* Media Queries para hacerlo responsivo */
+@media (max-width: 768px) {
+    .menu {
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        padding: 12px;
+    }
+
+    .search__input {
+        padding: 12px;
+    }
+
+    .clas1,
+    .clas2,
+    .clas3 {
+        justify-content: center;
+    }
+    .w3-sidebar {
+        display: none;
+    }
 }
+
+@media (max-width: 576px) {
+    .logo {
+        padding: 12px 0;
+    }
+
+    .search__input {
+        padding: 12px;
+    }
+}
+
+
+
